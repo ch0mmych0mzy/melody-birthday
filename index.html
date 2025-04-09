@@ -414,6 +414,55 @@
             transform: scaleX(1);
             transform-origin: left;
         }
+        
+        /* --- MOBILE RESPONSIVENESS FIX --- */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .magazine {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .cover h1 {
+        font-size: 32px;
+    }
+
+    .cover h2 {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .cover .age {
+        font-size: 60px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .cover-photo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .reasons-list {
+        columns: 1;
+    }
+
+    .goals-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        padding-left: 15px;
+    }
+
+    .timeline-item:before {
+        left: -25px;
+    }
+}
     </style>
 </head>
 <body>
